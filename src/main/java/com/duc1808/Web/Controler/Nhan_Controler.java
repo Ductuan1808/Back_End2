@@ -12,13 +12,13 @@ import java.util.ArrayList;
 
 @RestController
 public class Nhan_Controler {
-//     @GetMapping("/api/building")
-//    public ArrayList<Building_Model> getBuilding(@RequestParam(value = "name" ,required = false) String name,
-//                                                 @RequestParam(value = "districtid",required = false) Integer id){
-//        Building_Service_implement building_service_implement = new Building_Service_implement();
-//        ArrayList<Building_Model> list=building_service_implement.getBuilding(name,id);
-//
-//        return list;
-//    }
+     @GetMapping("/api/building")
+    public ArrayList<Building_Model> getBuilding(@RequestParam(value = "name" ,required = false) String name,
+                                                 @RequestParam(value = "districtid",required = false) Integer id){
+        Building_Service_implement building_service_implement = new Building_Service_implement();
+        ArrayList<Building_Model> list=building_service_implement.getBuilding(name,id);
+
+        return list;
+    }
 
 }
