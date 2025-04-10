@@ -38,7 +38,7 @@ public class Building_imp implements Building_Interface {
                     building_entity.setWard(rs.getString("ward"));
                     building_entity.setDistrictId(rs.getLong("districtid"));
                     building_entity.setNumberOfBasement(rs.getInt("numberOfBasement"));
-                    building_entity.setFloorArea(rs.getInt("floorarea"));
+                    building_entity.setFloorArea(rs.getLong("floorarea"));
                     building_entity.setManagerName(rs.getString("managerName"));
                     building_entity.setManagerPhoneNumber(rs.getString("managerPhoneNumber"));
                     list.add(building_entity);

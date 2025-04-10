@@ -21,12 +21,12 @@ public class Building_Service_implement implements Building_Service_Interface {
     @Override
     public ArrayList<Building_Model> getBuilding(Map<String,Object> listmap, ArrayList<String> listtypecode) {
         ArrayList<Building_Model> listbuildingmodel = new ArrayList<>();
+        Convert_Building_Model convert_building_model = new Convert_Building_Model();
         Building_imp building_imp = new Building_imp();
         ArrayList<Building_Entity> list = building_imp.getBuilding(listmap,listtypecode);
 
         for(Building_Entity x : list){
-
-            Building_Model building_model =Convert_Building_Model.chuyendoi(x);
+            Building_Model building_model =convert_building_model.chuyendoi(x);
             listbuildingmodel.add(building_model);
 
         }

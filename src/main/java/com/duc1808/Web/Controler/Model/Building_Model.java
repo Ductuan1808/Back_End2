@@ -4,6 +4,7 @@ public class Building_Model {
     private String name;
     private String address;
     private String managerName;
+    private Long Districtid;
     private String managerPhoneNumber;
     private Long floorArea;
     private String rentArea;
@@ -11,6 +12,14 @@ public class Building_Model {
     private Long rentPrice;
     private String serviceFee;
     private Long brokerageFee;
+
+    public Long getDistrictid() {
+        return Districtid;
+    }
+
+    public void setDistrictid(Long districtid) {
+        Districtid = districtid;
+    }
 
     public String getName() {
         return name;

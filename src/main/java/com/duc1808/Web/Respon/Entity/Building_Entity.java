@@ -12,7 +12,7 @@ public class Building_Entity {
     private Long districtId;
   //  private String structure;
     private Integer numberOfBasement;
-    private Integer floorArea;
+    private Long floorArea;
    // private String direction;
  //   private String level;
     private Integer rentPrice;
@@ -100,11 +100,11 @@ public class Building_Entity {
         this.numberOfBasement = numberOfBasement;
     }
 
-    public Integer getFloorArea() {
+    public Long getFloorArea() {
         return floorArea;
     }
 
-    public void setFloorArea(Integer floorArea) {
+    public void setFloorArea(Long floorArea) {
         this.floorArea = floorArea;
     }
 //

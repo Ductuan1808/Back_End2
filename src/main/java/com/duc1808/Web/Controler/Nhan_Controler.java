@@ -5,6 +5,7 @@ import com.duc1808.Web.Controler.Model.Building_Model;
 import com.duc1808.Web.Respon.Entity.Building_Entity;
 import com.duc1808.Web.Respon.implement.Building_imp;
 import com.duc1808.Web.Service.Imple.Building_Service_implement;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
